@@ -25,12 +25,7 @@
         }
       }
     }
-    else
-    {
-      echo "<tr><td>error</td></tr>";
-    }
     $mysqli->close();
-
 ?>
 </table>
   </body>
