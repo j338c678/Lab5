@@ -1,5 +1,8 @@
+<html>
+  <body>
+    <table>
 <?php
-  echo "<html><body><table>";
+
   $select = $_POST["n"];
   $mysqli = new mysqli("mysql.eecs.ku.edu","j338c678","moh3thoh","j338c678");
   if($mysqli->connect_errno)
@@ -24,8 +27,11 @@
     }
     else
     {
-      echo "<tr><td>Nothing to post</td></tr>";
+      echo "<tr><td>error</td></tr>";
     }
     $mysqli->close();
-    echo "</table></body></html>";
+
 ?>
+</table>
+  </body>
+  </html>
